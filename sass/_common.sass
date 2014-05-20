@@ -40,10 +40,88 @@
 // =book
 // 	font-family: "book",arial,sans-serif 
 	
-body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
-	line-height: 1.4
-
 
 // common blocks      
+.network
+	padding: 20px 0
+	font-size: 0
+	background: url('../img/bg.png') repeat 0 0
+	.network__block
+		position: relative
+		padding: 0 20px 0 85px
+		width: 25%
+		color: #C2C7CC 
+		font-size: 12px
+		display: inline-block
+		+box
+	.network__title
+		color: #FFF 
+		font-size: 16px
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+		font-weight: bold 
+	.network__pic
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -35px
+		display: block
+		&.network__pic_s
+			+s(social-pic)
+		&.network__pic_g
+			+s(guide-pic)
+		&.network__pic_m
+			+s(hub-pic)
+		&.network__pic_h
+			+s(studio-pic)
+
+//range
+.range
+	position: relative
+	height: 735px
+	overflow: hidden
+	.range__bg
+		position: absolute
+		top: -35px
+		left: -1%
+		height: 100%
+		width: 102%
+		background: #E8E6F7 
+		+rotate(-2)
+	.range__shad
+		position: absolute
+		top: -294px
+		left: 50%
+		margin-left: -294px 
+		height: 588px
+		width: 588px
+		background: #FFF
+		opacity: 0.75
+		z-index: 3
+		+box-shadow(0 0 680px 350px #fff)
+		+border-radius(50%)
+	.range__col
+		position: relative
+		z-index: 10
+	.range__netw
+		padding-top: 60px
+		color: #36434C 
+		text-align: center
+		font-size: 20px
+		.range__img 
+			display: inline-block
+		.range__img_soc
+			+s(soc-pic2)
+		.range__title	
+			font-weight: 300 
+			font-size: 40px
+			color: #7068AE 
+			font-family: omnes 
+	.range__left, .range__right
+		padding: 0 20px 0 75px 
+		width: 50%
+	.range__left
+		float: left
+	.range__right
+		float: right
+	.range__row
+		padding-left: 100px 

@@ -1,20 +1,556 @@
-<!doctype html>
-<!--[if lte IE 8]><html class="lteie8"><![endif]-->
-<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<!--[if IE 8]> <html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie ie9" lang="en"> <![endif]-->
+<html class="no-js">
+
 <head>
-	<meta charset="utf-8">
-	<title>Template</title>
-	<meta name="viewport" content="initial-scale=1"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+  <meta charset="utf-8">
+  <title></title>
+  <!--SEO skeleton-->
+  <meta name="robots" content="">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <!--allows ie8 users to use Google Chrome Frame plugin in our browser-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--Analytics include-->	
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+  <!--CSS include-->
+  <link href="assets/css/attendify-site-styles.min.css" rel="stylesheet">
 </head>
-<body>
 
-<!-- BEGIN  out-->
-<div class="out">
+<body class="first-screen-active">
 
-</div>
-<!-- END out-->
+<!--HEADER start-->
+<header class="l-header">
+  <div class="l-container  l-jLine--middle">
+    <!--logo-->
+    <a class="logo" href="/">Attendify</a>
+    <!--navigation-->
+    <nav class="header-nav" role="navigation">
+      <a href="#">Products</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+    </nav>
+    <!--user area-->
+    <div class="user-auth">
+      <a href="#">Log In</a>
+      <button>Sign Up</button>
+    </div>
+  </div>
+</header>
+<!--HEADER end-->
 
-<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<!--MAIN start-->
+<main class="l-main">
+
+    <!--template: main page-->
+    <!--first screen-->
+    <section id="first-screen" class="is-active">
+      <div class="l-container">
+        <header>
+          <h1 class="__title">Take control of your event app.</h1>
+          <p>Everything you need to build and manage apps that engage and delight.</p>
+          <button class="__btn">Learn More</button>
+        </header>
+
+        <aside id="our-clients">
+          <header>Join thousands of organizations who have used Attendify for their events</header>
+          <ul>
+            <li>Aol
+            <li>AstraZeneca
+            <li>Autodesk
+            <li>Disney
+            <li>Google
+            <li>Philips
+            <li>Sage
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="promo-screen" id="social-features-preview-wrap">
+      <div class="l-container">
+        <header class="__column">
+          <h1 class="__title">
+            Not just an<br/>
+            event app,<br/>
+            a private social network.
+          </h1>
+          <p>Leverage the power of social at your event with a private networking app build just for your even`t. Photos, messages, likes, comments, polls and more.</p>
+          <button class="__btn">Learn More</button>
+        </header>
+        <aside class="__column">
+
+          <article id="social-features-preview">
+            <div class="__preview-container">
+              <div>
+                <img src="http://fakeimg.pl/266x396/?text=IMAGE">
+                <button class="__trigger"></button>
+                <span class="__preview-container__label">Click Play to see <br/> Social Features</span>
+              </div>
+            </div>
+            <footer class="__features-list">
+              <ul>
+                <li class="__feature">
+                  <i class="icon-about"></i>
+                  <span class="__feature__label">Messages</span>
+                </li>
+                <li class="__feature">
+                  <i class="icon-about"></i>
+                  <span class="__feature__label">Photos</span>
+                </li>
+                <li class="__feature">
+                  <i class="icon-about"></i>
+                  <span class="__feature__label">Polls</span>
+                </li>
+                <li class="__feature">
+                  <i class="icon-about"></i>
+                  <span class="__feature__label">Likes</span>
+                </li>
+                <li class="__feature">
+                  <i class="icon-about"></i>
+                  <span class="__feature__label">Comments</span>
+                </li>
+              </ul>
+            </footer>
+          </article>
+
+        </aside>
+      </div>
+    </section>
+
+
+    <section id="possibilities">
+      <ul class="l-container">
+        <li>
+          <i class="icon-share"></i>
+          <h2 class="__title--sub">Share Privately</h2>
+          <p>Leverage the power of Attendify's latform to create and manage apps yourself. Its simpler, faster, and more affordable than ever to create.</p>
+        </li>
+        <li>
+          <i class="icon-build"></i>
+          <h2 class="__title--sub">Build a Community</h2>
+          <p>Leverage the power of Attendify's latform to create and manage apps yourself. Its simpler, faster, and more affordable than ever to create.</p>
+        </li>
+        <li>
+          <i class="icon-gear"></i>
+          <h2 class="__title--sub">Stay in Control</h2>
+          <p>Leverage the power of Attendify's platform to create and manage apps yourself. Its simpler, faster, and more affordable than ever to create.</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="features">
+      <div class="l-container">
+        <header>
+          <h1 class="__title">All the bells & whistles.</h1>
+          <p>We're not only social, we know how to get down to business.</p>
+        </header>
+        <ul>
+          <li>
+            <figure class="__feature">
+              <i class="icon-schedule"></i>
+              <figcaption>Schedule</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-speakers"></i>
+              <figcaption>Speakers</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-sponsors"></i>
+              <figcaption>Sponsors</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-exhibitors"></i>
+              <figcaption>Exhibitors</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-delegates"></i>
+              <figcaption>Delegates</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-maps"></i>
+              <figcaption>Maps</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-exhibit-maps"></i>
+              <figcaption>Exhibit maps</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-twitter"></i>
+              <figcaption>Twitter feed</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-news"></i>
+              <figcaption>News</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-web-view"></i>
+              <figcaption>Web view</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-eventbrite"></i>
+              <figcaption>Eventbrite</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="__feature">
+              <i class="icon-about"></i>
+              <figcaption>About</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="promo-screen">
+      <div class="l-container">
+        <header class="__column">
+          <h1 class="__title">
+            Build your app<br/>
+            in days,<br/>
+            not months.
+          </h1>
+          <p>Building your app is a simple step-by-step process that you can finish in hours. Customize your app with the features you need, colors, graphics, icon and more. </p>
+          <button class="__btn">Learn More</button>
+        </header>
+        <aside class="__column">
+
+        </aside>
+      </div>
+    </section>
+
+
+    <section id="app-creation-steps">
+      <header>
+        <h1 class="__title">Your own branded event app in 1 week? Yes!</h1>
+      </header>
+      <ul class="l-container">
+        <li>
+          <i></i>
+          <h2 class="__title--sub">Build</h2>
+          <p>Create your app in just a few hours with Attendify Hub.</p>
+        </li>
+        <li>
+          <i></i>
+          <h2 class="__title--sub">Submit</h2>
+          <p>When you're done submit your app and we'll get it built.</p>
+        </li>
+        <li>
+          <i></i>
+          <h2 class="__title--sub">Review</h2>
+          <p>Within 1 business day we'll submit your app to App Stores.</p>
+        </li>
+        <li>
+          <i></i>
+          <h2 class="__title--sub">App Stores</h2>
+          <p>App Store approval typically takes around 1 week.</p>
+        </li>
+      </ul>
+      <footer>
+        <a href="#" class="__btn">How-to Guide</a>
+      </footer>
+    </section>
+
+
+    <section id="our-clients-success">
+      <header>
+        <h1 class="__title">Engagement you can count on.</h1>
+        <p>See what our clients achieved with Attendify's platform.</p>
+      </header>
+      <ul class="l-container">
+        <li class="__client  __client--astrazeneca  __client--achivement-rate">
+          <div class="__header">
+            <div>
+              <h1 class="__logo">AstraZeneca</h1>
+              <b>82%</b> Adoption Rate
+            </div>
+          </div>
+          <article class="__main  app-description">
+            <aside class="__preview--mobile">
+              <img src="http://fakeimg.pl/230x352/?text=APP">
+            </aside>
+            <div class="__main">
+              <header class="__preview">
+                <img src="http://fakeimg.pl/230x352/?text=APP">
+                <h1>NEXT 2014 Sales Conference</h1>
+              </header>
+              <p>
+                A few key highlights from each case study will go here sharing what made this app particularly successful. Just a few sentences will be enough to get the point accross. Read the full
+                <a href="#">case study.</a>
+              </p>
+              <ul class="__stats">
+                <li><b>82%</b> Adoption rate</li>
+                <li><b>100</b> Photos Shared</li>
+                <li><b>500</b> Private Messages</li>
+                <li><b>62</b> Sessions/User</li>
+              </ul>
+              <footer class="__feedback">
+                <img src="http://fakeimg.pl/350x200/?text=IMG">
+                <blockquote>
+                  Attendees loved the Attendify app, sharing to the timeline was incredible!
+                  <span class='__feedback__author'><strong>Brian Virgo</strong>, AOL</span>
+                </blockquote>
+                <button class="__close">Close</button>
+              </footer>
+            </div>
+          </article>
+        </li>
+        <li class="__client  __client--google  __client--achivement-users">
+          <div class="__header">
+            <div>
+              <h1 class="__logo">Google</h1>
+              <b>53</b> Sessions/user
+            </div>
+          </div>
+        </li>
+        <li class="__client  __client--philips  __client--achivement-photos">
+          <div class="__header">
+            <div>
+              <h1 class="__logo">Philips</h1>
+              <b>281</b> Photos shared
+            </div>
+          </div>
+        </li>
+        <li class="__client  __client--bloomberg  __client--achivement-messages">
+          <div class="__header">
+            <div>
+              <h1 class="__logo">Bloomberg</h1>
+              <b>802</b> Messages
+            </div>
+          </div>
+        </li>
+        <li class="__client  __client--autodesk  __client--achivement-actions">
+          <div class="__header">
+            <div>
+              <h1 class="__logo">Autodesk</h1>
+              <b>142</b> Interactions
+            </div>
+          </div>
+        </li>
+        <li class="__client  __client--philips  __client--achivement-private-msg">
+          <div class="__header">
+            <div>
+              <h1 class="__logo">Philips</h1>
+              <b>768</b> Private Messages
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="helped-events">
+      <header>
+        <h1 class="__title">Attendify has helped events of all types deliver <br/> differentiating mobile experiences:</h1>
+      </header>
+      <ul class="l-container">
+        <li>
+          <h2 class="__title--sub">Conferences</h2>
+          <p>Leverage the power of Attendify's platform to create and manage apps yourself.</p>
+        </li>
+        <li>
+          <h2 class="__title--sub">Corporate</h2>
+          <p>Leverage the power of Attendify's platform to create and manage apps yourself.</p>
+        </li>
+        <li>
+          <h2 class="__title--sub">Assosiations</h2>
+          <p>Leverage the power of Attendify's platform to create and manage apps yourself.</p>
+        </li>
+        <li>
+          <h2 class="__title--sub">Faith Based Orgs.</h2>
+          <p>Leverage the power of Attendify's platform to create and manage apps yourself.</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="pricing">
+      <header>
+        <h1 class="__title">Simple pricing.</h1>
+        <p>Attendify isn't only the fastest & easiest way to build your app, but also affordable:</p>
+      </header>
+      <ul class="l-container">
+        <li>
+          <article class="__unit">
+            <header>
+              <h2 class="__title--sub">Guide</h2>
+            </header>
+            <p>Replace your print version with an interactive mobile event app.</p>
+            <footer>
+              <b class="__price">599</b>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="__unit  __unit--accent">
+            <header>
+              <h2 class="__title--sub">Social</h2>
+            </header>
+            <p>A private social network for your event + the Guide App's features.</p>
+            <footer>
+              <b class="__price">999</b>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="__unit">
+            <header>
+              <h2 class="__title--sub">Multi-event</h2>
+            </header>
+            <p>Replace your print version with an interactive mobile event app.</p>
+            <footer>
+              <b class="__price  __price--monthly">199</b>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="get-started">
+      <header>
+        <h1 class="__title">Ready to get started?</h1>
+      </header>
+      <div class="l-container">
+        <form>
+          <h2 class="__title--sub">Start building your app, free!</h2>
+          <input type="email" placeholder="Email" required/>
+          <input type="password" placeholder="Password" required/>
+          <input type="password" placeholder="Password" required/>
+          <button type="submit">Sign Up for Free</button>
+        </form>
+        <form>
+          <h2 class="__title--sub">Request a Personal Demo:</h2>
+          <input type="text" placeholder="Name" required/>
+          <input type="email" placeholder="Email" required/>
+          <input type="tel" placeholder="Phone (optional)"/>
+          <button type="submit">Request a Demo</button>
+        </form>
+      </div>
+    </section>
+
+
+</main>
+<!--MAIN end-->
+
+<!--start FOOTER-->
+<footer class="l-footer">
+
+  <div class="l-container">
+    <nav class="footer-nav">
+      <ul>
+        <li class="__column">
+          <h2 class="__column__title">Products</h2>
+          <ul>
+            <li><a href="#">Social</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">Multi-Event</a></li>
+            <li><a href="#">Attendify</a></li>
+          </ul>
+        </li>
+        <li class="__column">
+          <h2 class="__column__title">About</h2>
+          <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li class="__column">
+          <h2 class="__column__title">Support</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Request a Demo</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+          </ul>
+        </li>
+        <li class="__column">
+          <h2 class="__column__title">Social</h2>
+          <ul class="social--footer">
+            <li><a class="facebook" title="Facebook" href="#">Facebook</a></li>
+            <li><a class="twitter" title="Twitter" href="#">Twitter</a></li>
+            <li><a class="linkedin" title="Linkedin" href="#">LinkedIn</a></li>
+            <li><a class="google" title="Google+" href="#">Google+</a></li>
+            <li><a class="pinterest" title="Pinterest" href="#">Pinterest</a></li>
+            <li><a class="instagram" title="Instagram" href="#">Instagram</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="l-footer__btm">
+
+      <div class="social-vidgets">
+        <a href="https://twitter.com/attendifyapp" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @attendify</a>
+        <div class="fb-like" data-href="https://www.facebook.com/attendifyapp" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      </div>
+
+      <small class="copyright">© 2014 Attendify. All Rights Reserved.</small>
+
+      <nav class="service-nav">
+        <a href="#">Privacy Policy</a><a href="#">Terms of Service</a>
+      </nav>
+
+    </div>
+  </div>
+
+</footer>
+<!-- end FOOTER -->
+
+
+<!--SCRIPTS  start-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="assets/js/attendify-site-plugins.min.js"></script>
+<script src="assets/js/attendify-site-components.min.js"></script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+  (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
+    (f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
+      l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-XXXXXXXX-XX');
+  ga('send', 'pageview');
+</script>
+<!--SCRIPTS end-->
+
 </body>
 </html>

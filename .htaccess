@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName 'Authorization panel'
+AuthUserFile /home3/u138943/vargentumru/work/attendify-landing/.htpasswd
+Require valid-user
