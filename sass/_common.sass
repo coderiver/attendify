@@ -41,10 +41,50 @@
 // 	font-family: "book",arial,sans-serif 
 	
 
-// common blocks      
+// common blocks   
+
+.out
+	overflow: hidden 
+	
+//.btn
+.btn
+	position: relative
+	padding: 0 50px 0 28px 
+	font-size: 14px
+	font-weight: 300
+	line-height: 38px  
+	+border-radius(21px)
+	&:before
+		position: absolute
+		content: ""
+		top: 50%
+		right: 25px
+		margin-top: -6.5px
+	&.btn_purple
+		color: #7068AE 
+		border: 2px solid #7068ae
+		&:before
+			+s(btn-purple)
+	&.btn_blue
+		border: 2px solid #5d71bb 
+		color: #5D71BB 
+		&:before
+			+s(btn-blue)
+	&.btn_multi
+		color: #8F68AE 
+		border: 2px solid #8f68ae
+		&:before
+			+s(btn-mult)
+	&.btn_grey 
+		color: #7A8A99
+		border: 2px solid #7a8a99  
+		&:before
+			+s(btn-grey)
 .network
+	position: relative
 	padding: 20px 0
 	font-size: 0
+	z-index: 1
 	background: url('../img/bg.png') repeat 0 0
 	.network__block
 		position: relative
@@ -78,30 +118,81 @@
 .range
 	position: relative
 	height: 735px
-	overflow: hidden
+	// overflow: hidden
+	&.range_duide
+		.l-container_top
+			background: url('../img/iPhone-tc.png') no-repeat 13% 295px
+			.range__ico_clock
+				+s(gop-pic)
+			.range__ico_user
+				+s(inst-pic)
+			.range__ico_book
+				+s(sche-pic)
+			.range__title
+				color: #5769AE 
+	&.range_multi
+		.l-container_top
+			background: url('../img/iPhone-tc2.png') no-repeat 88% 295px
+			.range__ico_clock
+				+s(sche-pic2)
+			.range__ico_user
+				+s(inst-pic2)
+			.range__ico_book
+				+s(gop-pic2)
+			.range__title
+				color: #8f68ae
+	&.range__hub
+		.range__col
+			background: url('../img/iPhonebot.png') no-repeat 0% 220px
+		.l-container
+			.range__ico_clock
+				+s(step-pic3)
+			.range__ico_user
+				+s(liveap-pic)
+			.range__ico_book
+				+s(fullm-pic3)
+			.range__title
+				color: #7a8a99
+	.l-container
+		padding-bottom: 109px
+		+clr
+	.l-container_top
+		background: url('../img/iPhone-top.png') no-repeat 88% 295px
 	.range__bg
 		position: absolute
-		top: -35px
-		left: -1%
+		top: 0
+		left: -2%
 		height: 100%
-		width: 102%
+		width: 104%
+		overflow: hidden
 		background: #E8E6F7 
-		+rotate(-2)
+		+rotate(-1.9)
+		&.range__bg_top
+			top: -4%
+			height: 104%
+		&.range__bg_guide
+			background: #edf0fa 
+		&.range__bg_multi
+			background: #F4EDF9 
+		&.range__hub
+			background: #F4F8FB 
 	.range__shad
 		position: absolute
-		top: -294px
+		top: -100px
 		left: 50%
-		margin-left: -294px 
-		height: 588px
-		width: 588px
+		margin-left: -50px 
+		height: 100px
+		width: 100px
 		background: #FFF
-		opacity: 0.75
-		z-index: 3
-		+box-shadow(0 0 680px 350px #fff)
+		opacity: 0.8
+		z-index: 1
+		+box-shadow(0 0 1000px 750px #fff)
 		+border-radius(50%)
 	.range__col
 		position: relative
 		z-index: 10
+		.btn
+			margin-top: 15px
 	.range__netw
 		padding-top: 60px
 		color: #36434C 
@@ -109,13 +200,23 @@
 		font-size: 20px
 		.range__img 
 			display: inline-block
-		.range__img_soc
-			+s(soc-pic2)
+			&.range__img_soc
+				+s(soc-pic2)
+			&.range__img_duide
+				+s(gui-pic2)
+			&.range__img_multi
+				+s(mul-pic)
+			&.range__img_hub
+				+s(fullm-pic3)
 		.range__title	
 			font-weight: 300 
 			font-size: 40px
 			color: #7068AE 
-			font-family: omnes 
+			font-family: Omnes,Arial,sans-serif
+	.range__title2
+		font-size: 15px
+		font-weight: 700
+		color: #36434C 
 	.range__left, .range__right
 		padding: 0 20px 0 75px 
 		width: 50%
@@ -124,4 +225,129 @@
 	.range__right
 		float: right
 	.range__row
-		padding-left: 100px 
+		position: relative
+		margin-bottom: 30px 
+		padding-left: 100px
+		&:first-child
+			margin-top: 90px
+	.range__ico 
+		position: absolute
+		top: -4px
+		left: 0
+		&.range__ico_clock
+			+s(privat-pic)
+		&.range__ico_user
+			+s(att-pic)
+		&.range__ico_book
+			+s(aco-pic)
+
+
+//calendar
+.calendar
+	position: relative
+	margin-top: -35px
+	padding: 42px 0 55px 
+	color: #FFF 
+	font-weight: 100 
+	font-size: 18px
+	text-align: center
+	z-index: 3
+	+background-image(linear-gradient(right, #8f67ad 0%, #5569ad 100%))
+	.calendar__top
+		margin-bottom: 12px
+		font-size: 36px
+		font-family: Omnes, Arial,sans-serif 
+	.calendar__block
+		margin-top: 35px
+		
+//cycle
+.cycle
+	padding: 55px 0
+	background: url('../img/bg.png') repeat 0 0
+	.cycle__title
+		color: #FFF 
+		font-size: 42px
+		text-align: center
+		font-family: Omnes, Arial,sans-serif  
+	.cycle__title2
+		color: #FFF 
+		font-size: 22px
+		font-weight: 100 
+		text-align: center
+	.cycle-slideshow
+		margin: 50px 0 35px
+		min-height: 143px 
+	.cycle__block
+		width: 100%
+		color: #6c7480
+		font-size: 14px
+	.cycle__img
+		float: left
+		width: 354px
+		img
+			margin: 0 auto
+			display: block
+	.cycle__top
+		padding-bottom: 10px
+		color: #fff 
+		font-size: 18px
+	.cycle-pager
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		line-height: 10px 
+		z-index: 200 
+		text-align: center
+		button
+			margin-left: 10px
+			height: 8px
+			width: 8px
+			vertical-align: middle
+			border: 2px solid #525c67
+			background: none
+			display: inline-block
+			+border-radius(50%)
+			&.is-active
+				width: 10px
+				height: 10px
+				background: #525C67 
+	.cycle__nav
+		position: absolute
+		top: 50%
+		z-index: 200
+		margin-top: -31px
+		&:hover
+			opacity: 0.8
+	.cycle__nav_prev
+		left: 0
+		+s(arrow-prev)
+	.cycle__nav_next
+		right: 0
+		+s(arrow-next)
+	.cycle__row
+		margin-top: 20px
+		font-size: 0
+	//input
+	.input
+		margin-right: 1.25%
+		min-width: 150px
+		width: 24%
+		display: inline-block
+		input
+			padding: 0 14px 
+			width: 100%
+			height: 40px
+			font-size: 14px
+			vertical-align: middle
+			background: #FFF 
+			+border-radius(8px)
+			+placeholder-color(#9ea1a6)
+			+box
+	.btn-submit
+		width: 24%
+		height: 40px
+		text-align: center
+		vertical-align: middle
+		background: #3D91CC 
+		+border-radius(8px)
