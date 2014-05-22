@@ -45,7 +45,57 @@
 
 .out
 	overflow: hidden 
-	
+	.header
+		position: relative
+		padding-bottom: 0
+		color: #FFF 
+		+background-image(linear-gradient(20deg, #66a1cc 0%, #4770b2 100%))
+		.l-container
+			height: 760px
+			background: url("../img/img-top.png") no-repeat 0 136%
+		.header__top
+			+clr
+		.logo
+			float: left
+			+s(logo)
+		.header-nav
+			float: left
+			margin: 0 0 0 110px 
+		.user-auth
+			float: right
+		.header-nav, .user-auth, .logo
+			vertical-align: top
+			display: inline-block
+		.log-in
+			padding: 0 30px 
+			height: 36px
+			font-size: 14px
+			font-weight: 300 
+			vertical-align: middle
+			+border-radius(18px)
+			border: 2px solid #557db3
+			background: none
+		.header__title
+			margin: 45px 0 15px
+			font-size: 52px
+			font-family: Omnes, Arial,sans-serif 
+		.header__text
+			font-size: 18px
+		.header__title, .header__text
+			text-align: center
+
+//.user-auth		
+.user-auth
+	.log-in
+		padding: 0 30px 
+		height: 36px
+		font-size: 14px
+		font-weight: 300 
+		vertical-align: middle
+		+border-radius(18px)
+		border: 2px solid #557db3
+		background: none
+
 //.btn
 .btn
 	position: relative
@@ -80,6 +130,8 @@
 		border: 2px solid #7a8a99  
 		&:before
 			+s(btn-grey)
+
+//network
 .network
 	position: relative
 	padding: 20px 0
@@ -117,7 +169,8 @@
 //range
 .range
 	position: relative
-	height: 735px
+	min-height: 735px
+	+box
 	// overflow: hidden
 	&.range_duide
 		.l-container_top
@@ -154,13 +207,13 @@
 			.range__title
 				color: #7a8a99
 	.l-container
-		padding-bottom: 109px
+		padding-bottom: 93px
 		+clr
 	.l-container_top
 		background: url('../img/iPhone-top.png') no-repeat 88% 295px
 	.range__bg
 		position: absolute
-		top: 0
+		top: -1.8%
 		left: -2%
 		height: 100%
 		width: 104%
@@ -345,9 +398,41 @@
 			+placeholder-color(#9ea1a6)
 			+box
 	.btn-submit
+		min-width: 150px
 		width: 24%
 		height: 40px
+		color: #FFF
+		font-weight: bold  
 		text-align: center
 		vertical-align: middle
 		background: #3D91CC 
 		+border-radius(8px)
+
+@media only screen and (max-width: 900px)
+	.out
+		.header .l-container
+			width: 100% !important
+			background: url("../img/img-top.png") no-repeat 50% 136% 
+		.header-nav
+			top: 9%
+			margin-left: 0 !important
+		.header__title
+			margin-top: 82px !important 
+		.range .range__left, .range .range__right
+			width: 100%
+		// .range .l-container
+		// 	padding-bottom: 136px
+		.input
+			margin-bottom: 1.25%
+		.network__block
+			margin-bottom: 20px
+			width: 50%
+		.cycle__block
+			padding: 40px
+			text-align: center
+			+box
+		.cycle__img
+			margin-bottom: 15px
+			width: 100%
+		.cycle__row
+			text-align: center
