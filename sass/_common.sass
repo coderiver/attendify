@@ -9,7 +9,7 @@
 //           +rotate(0)
 //        to
 //           +rotate(360)
-// ## animation usage
+// ## animation usage 
 //     body:hover
 // 	    +animation(rotate 200s linear infinite)
 // ## animations easing, see easings.net for full list and examples, tnx @ai
@@ -60,7 +60,7 @@
 			+s(logo)
 		.header-nav
 			float: left
-			margin: 0 0 0 110px 
+			margin: 0 0 0 100px 
 		.user-auth
 			float: right
 		.header-nav, .user-auth, .logo
@@ -174,7 +174,7 @@
 	// overflow: hidden
 	&.range_duide
 		.l-container_top
-			background: url('../img/iPhone-tc.png') no-repeat 13% 295px
+			background: url('../img/iPhone-tc.png') no-repeat 13% 320px
 			.range__ico_clock
 				+s(gop-pic)
 			.range__ico_user
@@ -185,7 +185,7 @@
 				color: #5769AE 
 	&.range_multi
 		.l-container_top
-			background: url('../img/iPhone-tc2.png') no-repeat 88% 295px
+			background: url('../img/iPhone-tc2.png') no-repeat 88% 320px
 			.range__ico_clock
 				+s(sche-pic2)
 			.range__ico_user
@@ -207,10 +207,10 @@
 			.range__title
 				color: #7a8a99
 	.l-container
-		padding-bottom: 93px
+		min-height: 774px
 		+clr
 	.l-container_top
-		background: url('../img/iPhone-top.png') no-repeat 88% 295px
+		background: url('../img/iPhone-top.png') no-repeat 88% 320px
 	.range__bg
 		position: absolute
 		top: -1.8%
@@ -437,3 +437,21 @@
 			width: 100%
 		.cycle__row
 			text-align: center
+		
+/// js
+
+.jspContainer
+	overflow: hidden
+	position: relative
+
+.jspPane
+	position: absolute
+
+.jspVerticalBar
+	display: none !important
+
+.ddd
+	overflow: hidden
+	.out
+		overflow-y: auto
+		margin-right: -20px

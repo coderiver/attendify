@@ -25,7 +25,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .out .header .header__top { *zoom: 1; }
 .out .header .header__top:after { content: " "; display: table; clear: both; }
 .out .header .logo { float: left; background: url('../img/icons-s9f10354c14.png') 0 -1270px no-repeat; width: 130px; height: 31px; }
-.out .header .header-nav { float: left; margin: 0 0 0 110px; }
+.out .header .header-nav { float: left; margin: 0 0 0 100px; }
 .out .header .user-auth { float: right; }
 .out .header .header-nav, .out .header .user-auth, .out .header .logo { vertical-align: top; display: inline-block; }
 .out .header .log-in { padding: 0 30px; height: 36px; font-size: 14px; font-weight: 300; vertical-align: middle; -webkit-border-radius: 18px; -moz-border-radius: 18px; -ms-border-radius: 18px; -o-border-radius: 18px; border-radius: 18px; border: 2px solid #557db3; background: none; }
@@ -56,12 +56,12 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .network .network__pic.network__pic_h { background: url('../img/icons-s9f10354c14.png') 0 -460px no-repeat; width: 70px; height: 70px; }
 
 .range { position: relative; min-height: 735px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.range.range_duide .l-container_top { background: url("../img/iPhone-tc.png") no-repeat 13% 295px; }
+.range.range_duide .l-container_top { background: url("../img/iPhone-tc.png") no-repeat 13% 320px; }
 .range.range_duide .l-container_top .range__ico_clock { background: url('../img/icons-s9f10354c14.png') 0 -1565px no-repeat; width: 72px; height: 72px; }
 .range.range_duide .l-container_top .range__ico_user { background: url('../img/icons-s9f10354c14.png') 0 -620px no-repeat; width: 72px; height: 72px; }
 .range.range_duide .l-container_top .range__ico_book { background: url('../img/icons-s9f10354c14.png') 0 -1727px no-repeat; width: 70px; height: 70px; }
 .range.range_duide .l-container_top .range__title { color: #5769ae; }
-.range.range_multi .l-container_top { background: url("../img/iPhone-tc2.png") no-repeat 88% 295px; }
+.range.range_multi .l-container_top { background: url("../img/iPhone-tc2.png") no-repeat 88% 320px; }
 .range.range_multi .l-container_top .range__ico_clock { background: url('../img/icons-s9f10354c14.png') 0 -1647px no-repeat; width: 70px; height: 70px; }
 .range.range_multi .l-container_top .range__ico_user { background: url('../img/icons-s9f10354c14.png') 0 -702px no-repeat; width: 72px; height: 72px; }
 .range.range_multi .l-container_top .range__ico_book { background: url('../img/icons-s9f10354c14.png') 0 -1401px no-repeat; width: 72px; height: 72px; }
@@ -71,9 +71,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .range.range__hub .l-container .range__ico_user { background: url('../img/icons-s9f10354c14.png') 0 -1483px no-repeat; width: 72px; height: 72px; }
 .range.range__hub .l-container .range__ico_book { background: url('../img/icons-s9f10354c14.png') 0 -1108px no-repeat; width: 72px; height: 72px; }
 .range.range__hub .l-container .range__title { color: #7a8a99; }
-.range .l-container { padding-bottom: 93px; *zoom: 1; }
+.range .l-container { min-height: 774px; *zoom: 1; }
 .range .l-container:after { content: " "; display: table; clear: both; }
-.range .l-container_top { background: url("../img/iPhone-top.png") no-repeat 88% 295px; }
+.range .l-container_top { background: url("../img/iPhone-top.png") no-repeat 88% 320px; }
 .range .range__bg { position: absolute; top: -1.8%; left: -2%; height: 100%; width: 104%; overflow: hidden; background: #e8e6f7; -ms-transform: rotate(-1.9deg); -webkit-transform: rotate(-1.9deg); transform: rotate(-1.9deg); }
 .range .range__bg.range__bg_top { top: -4%; height: 104%; }
 .range .range__bg.range__bg_guide { background: #edf0fa; }
@@ -135,6 +135,15 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
   .out .cycle__block { padding: 40px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
   .out .cycle__img { margin-bottom: 15px; width: 100%; }
   .out .cycle__row { text-align: center; } }
+.jspContainer { overflow: hidden; position: relative; }
+
+.jspPane { position: absolute; }
+
+.jspVerticalBar { display: none !important; }
+
+.ddd { overflow: hidden; }
+.ddd .out { overflow-y: auto; margin-right: -20px; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
