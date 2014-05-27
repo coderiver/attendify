@@ -56,26 +56,26 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .network .network__pic.network__pic_h { background: url('../img/icons-s9f10354c14.png') 0 -460px no-repeat; width: 70px; height: 70px; }
 
 .range { position: relative; min-height: 735px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.range.range_duide .l-container_top { background: url("../img/iPhone-tc.png") no-repeat 13% 320px; }
+.range.range_duide .l-container_top { background: url("../img/iPhone-tc.png") no-repeat 13% 282px; }
 .range.range_duide .l-container_top .range__ico_clock { background: url('../img/icons-s9f10354c14.png') 0 -1565px no-repeat; width: 72px; height: 72px; }
 .range.range_duide .l-container_top .range__ico_user { background: url('../img/icons-s9f10354c14.png') 0 -620px no-repeat; width: 72px; height: 72px; }
 .range.range_duide .l-container_top .range__ico_book { background: url('../img/icons-s9f10354c14.png') 0 -1727px no-repeat; width: 70px; height: 70px; }
 .range.range_duide .l-container_top .range__title { color: #5769ae; }
-.range.range_multi .l-container_top { background: url("../img/iPhone-tc2.png") no-repeat 88% 320px; }
+.range.range_multi .l-container_top { background: url("../img/iPhone-tc2.png") no-repeat 86% 282px; }
 .range.range_multi .l-container_top .range__ico_clock { background: url('../img/icons-s9f10354c14.png') 0 -1647px no-repeat; width: 70px; height: 70px; }
 .range.range_multi .l-container_top .range__ico_user { background: url('../img/icons-s9f10354c14.png') 0 -702px no-repeat; width: 72px; height: 72px; }
 .range.range_multi .l-container_top .range__ico_book { background: url('../img/icons-s9f10354c14.png') 0 -1401px no-repeat; width: 72px; height: 72px; }
 .range.range_multi .l-container_top .range__title { color: #8f68ae; }
-.range.range__hub .range__col { background: url("../img/iPhonebot.png") no-repeat 0% 220px; }
+.range.range__hub .range__col { background: url("../img/iPhonebot.png") no-repeat 0% 267px; }
 .range.range__hub .l-container .range__ico_clock { background: url('../img/icons-s9f10354c14.png') 0 -864px no-repeat; width: 70px; height: 70px; }
 .range.range__hub .l-container .range__ico_user { background: url('../img/icons-s9f10354c14.png') 0 -1483px no-repeat; width: 72px; height: 72px; }
 .range.range__hub .l-container .range__ico_book { background: url('../img/icons-s9f10354c14.png') 0 -1108px no-repeat; width: 72px; height: 72px; }
 .range.range__hub .l-container .range__title { color: #7a8a99; }
-.range .l-container { min-height: 774px; *zoom: 1; }
+.range .l-container { min-height: 732px; *zoom: 1; }
 .range .l-container:after { content: " "; display: table; clear: both; }
-.range .l-container_top { background: url("../img/iPhone-top.png") no-repeat 88% 320px; }
-.range .range__bg { position: absolute; top: -1.8%; left: -2%; height: 100%; width: 104%; overflow: hidden; background: #e8e6f7; -ms-transform: rotate(-1.9deg); -webkit-transform: rotate(-1.9deg); transform: rotate(-1.9deg); }
-.range .range__bg.range__bg_top { top: -4%; height: 104%; }
+.range .l-container_top { background: url("../img/iPhone-top.png") no-repeat 86% 282px; }
+.range .range__bg { position: absolute; top: -1.8%; left: -2%; height: 101.34%; width: 104%; overflow: hidden; background: #e8e6f7; -ms-transform: rotate(-1.8deg); -webkit-transform: rotate(-1.8deg); transform: rotate(-1.8deg); }
+.range .range__bg.range__bg_top { top: -3%; height: 101.34%; }
 .range .range__bg.range__bg_guide { background: #edf0fa; }
 .range .range__bg.range__bg_multi { background: #f4edf9; }
 .range .range__bg.range__hub { background: #f4f8fb; }
@@ -87,13 +87,13 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .range .range__netw .range__img.range__img_soc { background: url('../img/icons-s9f10354c14.png') 0 -1311px no-repeat; width: 80px; height: 80px; }
 .range .range__netw .range__img.range__img_duide { background: url('../img/icons-s9f10354c14.png') 0 -1927px no-repeat; width: 80px; height: 80px; }
 .range .range__netw .range__img.range__img_multi { background: url('../img/icons-s9f10354c14.png') 0 -1807px no-repeat; width: 80px; height: 80px; }
-.range .range__netw .range__img.range__img_hub { background: url('../img/icons-s9f10354c14.png') 0 -1108px no-repeat; width: 72px; height: 72px; }
+.range .range__netw .range__img.range__img_hub { background: url('../img/icons-s9f10354c14.png') 0 -460px no-repeat; width: 70px; height: 70px; }
 .range .range__netw .range__title { font-weight: 300; font-size: 40px; color: #7068ae; font-family: Omnes, Arial, sans-serif; }
 .range .range__title2 { font-size: 15px; font-weight: 700; color: #36434c; }
-.range .range__left, .range .range__right { padding: 0 20px 0 75px; width: 50%; }
-.range .range__left { float: left; }
-.range .range__right { float: right; }
-.range .range__row { position: relative; margin-bottom: 30px; padding-left: 100px; }
+.range .range__left, .range .range__right { width: 50%; }
+.range .range__left { padding: 0 20px 0 75px; float: left; }
+.range .range__right { padding: 0 20px 0 0; float: right; }
+.range .range__row { position: relative; margin-bottom: 33px; padding-left: 100px; }
 .range .range__row:first-child { margin-top: 90px; }
 .range .range__ico { position: absolute; top: -4px; left: 0; }
 .range .range__ico.range__ico_clock { background: url('../img/icons-s9f10354c14.png') 0 -1190px no-repeat; width: 70px; height: 70px; }
