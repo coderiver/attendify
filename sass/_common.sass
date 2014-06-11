@@ -502,7 +502,292 @@
 		width: 2px 
 		display: block !important
 		background: #383D45 
-		
+//tab
+.tab
+	position: relative
+	margin-top: 30px
+	width: 790px
+	height: 456px
+	border: 1px solid #DAE8F2 
+	display: inline-block
+	+border-radius(8px) 
+	.tab__pic
+		position: absolute
+		top: 64px
+		right: -43px
+.tab__wrap
+	overflow: hidden 
+	+border-radius(8px 8px 0 0)
+.tab__item
+	position: relative
+	float: left
+	height: 47px
+	width: 20%
+	border-bottom: 1px solid #dae8f2
+	&.is-active
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			right: 0
+			+s(tab-pic2)
+		.tab__link
+			background: #189fd7
+			color: #fff
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		right: -11px 
+		z-index: 200
+		+s(tab-pic3)
+	&:last-child
+		&.is-active
+			&:before
+				content: none
+.tab__link
+	display: block  
+	padding: 0 20px 
+	line-height: 46px
+	background: #fff
+	color: #768188
+	text-decoration: none  
+.tab-cont
+	padding: 20px
+
+.tab_2, .tab_3
+	margin-top: 50px
+	.tab__item
+		&:before
+			content: none
+		&:first-child
+			border-left: none
+		&.is-active
+			.tab__link
+				color: #45a3e6
+				background: none
+			.tab__link_1
+				span
+					&:before
+						+s(tab-pic4)
+			.tab__link_4
+				span
+					&:before
+						+s(tab-pic7)
+			&:before
+				content: none
+		.tab__link
+			background: none
+			span
+				position: relative
+				padding-left: 35px
+				display: inline-block
+				&:before
+					position: absolute
+					content: ''
+					top: 50%
+					margin-top: -7px
+					left: 0
+			&.tab__link_1
+				span
+					&:before
+
+			&.tab__link_2
+				span
+					&:before
+						+s(tab-pic5)
+			&.tab__link_3
+				span
+					&:before
+						margin-top: -12.5px
+						+s(tab-pic6)
+			&.tab__link_4
+				span
+					&:before
+			&.tab__link_5
+				span
+					&:before
+						left: 5px
+						+s(tab-pic8)
+			&.tab__link_6
+				span
+					&:before
+						margin-top: -12px
+						+s(tab-pic9)
+			&.tab__link_7
+				span
+					&:before
+						+s(tab-pic10)
+			&.tab__link_8
+				span
+					&:before
+						+s(tab-pic11)
+
+.tab_2
+	height: 380px
+	width: 470px
+	.tab__wrap
+		overflow: visible
+	.tab__item
+		width: 33.33%
+		border-left: 1px solid #dae8f2
+		&.is-active
+			&:after
+				position: absolute
+				content: ''
+				bottom: -1px
+				left: -1px
+				right: -1px
+				height: 3px
+				z-index: 2
+				background: #45a3e6
+	.tab__pic_circle
+		position: absolute
+		right: -40px
+		top: auto
+		bottom: -40px
+		height: 172px
+		width: 172px
+		border: 2px solid rgba(#144466, 0.1)
+		background: #fff
+		+border-radius(50%)
+	.tab-cont__block
+		position: absolute
+		top: 170px
+		left: -240px
+		width: 200px
+		color: #6c7880
+		text-align: left
+	.tab-cont__line
+		position: absolute
+		right: -153px
+		top: 10px
+		width: 142px
+		height: 1px
+		background: #45a3e6
+		&:before
+			position: absolute
+			content: ''
+			top: -2.5px
+			right: -7px
+			height: 5px
+			width: 5px
+			background: #45a3e6
+			+border-radius(50%)
+		&:after
+			position: absolute
+			content: ''
+			top: -4.5px
+			left: -11px
+			width: 9px
+			height: 9px
+			border: 2px solid #45a3e6
+			+border-radius(50%)
+.tab_3
+	margin-bottom: 40px
+	.tab__wrap
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		width: 229px
+		border-right: 1px solid #dae8f2
+		+border-radius(8px 0 0 0)
+	.tab__item
+		width: 100%
+	.tab__link
+		text-align: left
+
+//day
+.day
+	position: relative
+	margin-top: 40px
+	width: 772px
+	height: 20px
+	text-align: left
+	background: url('../img/day-bg.png') repeat-x 0 50%
+	display: inline-block
+	.day__mark
+		position: absolute
+		top: 0
+		width: 20px
+		height: 20px
+		background: #fff
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			margin: -1.5px 0 0 -1.5px
+			height: 3px
+			width: 3px
+			background: #45b8e6
+			+border-radius(50%)
+		&:after
+			position: absolute
+			content: ''
+			top: 3.5px
+			left: 3.5px
+			height: 13px
+			width: 13px
+			border: 2px solid #45b8e6
+			+border-radius(50%)
+			
+	.day__mark_1
+		left: 0
+	.day__mark_2
+		left: 285px
+	.day__mark_3
+		right: 0
+	.day__item
+		padding: 0 5px
+		color: #6c7880
+		font-weight: 300
+		background: #fff
+		&.day__item_1
+			margin-left: 95px
+		&.day__item_2
+			margin-left: 262px
+
+//field
+.field
+	+clr
+	.field__item
+		float: left
+		margin: 35px 0 0 97px
+		color: #6c7880
+		text-align: center
+		width: 20%
+		+box
+		&:first-child
+			margin-left: 0
+	.field__item_right
+		float: right
+	.field__img
+		display: inline-block
+	.field__img_1
+		+s(web-app-img)
+	.field__img_2
+		+s(rew-sub-img)
+	.field__img_3
+		+s(app-pub-img)
+	.field__title
+		padding: 18px 0 10px
+		font-size: 20px
+		font-weight: 700
+		color: #45b8e6
+
+//get-started_mod
+.get-started_mod
+	color: #b9babc
+	font-size: 18px
+	font-weight: 100
+	+gh(#3d454b, #474f59)
+	.__title
+		margin-bottom: 6px !important
+	header
+		margin-bottom: 60px
+
 @media only screen and (max-width: 900px)
 	.out
 		.header .l-container
