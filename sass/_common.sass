@@ -427,10 +427,9 @@
 	.service-nav
 		float: right
 	
-// page how-it-works
+//BEGIN page how-it-works
 .out_white
-	.row
-		padding: 60px 0 
+	
 	.header
 		.l-container
 			height: 760px
@@ -457,8 +456,9 @@
 			+border-radius(50%)
 			background: #fff 
 			display: inline-block
-	.topic
-		text-align: center
+//topic
+.topic
+	text-align: center
 	.topic__title
 		margin: 30px 0 15px 
 		font: 40px omnes
@@ -469,6 +469,10 @@
 		color: #6C7880
 		font-size: 18px
 		font-weight: 100  
+
+//row		
+.row
+	padding: 60px 0 
 
 .network_white
 	text-align: center
@@ -613,7 +617,7 @@
 				span
 					&:before
 						margin-top: -12px
-						+s(tab-pic9)
+						+s(tab-pic9) 
 			&.tab__link_7
 				span
 					&:before
@@ -637,7 +641,7 @@
 				content: ''
 				bottom: -1px
 				left: -1px
-				right: -1px
+				right: -1px 
 				height: 3px
 				z-index: 2
 				background: #45a3e6
@@ -777,7 +781,7 @@
 		font-weight: 700
 		color: #45b8e6
 
-//get-started_mod
+// BEGIN get-started_mod
 .get-started_mod
 	color: #b9babc
 	font-size: 18px
@@ -788,6 +792,19 @@
 	header
 		margin-bottom: 60px
 
+
+//page social-app
+.out_social
+	.header
+		.l-container
+			background: url('../img/iphone-soc-pic.png') no-repeat 50% 120%, url('../img/left_part_bg.png') no-repeat 0 90%, url('../img/right_part_bg.png') no-repeat 100% 90%
+	.cycle
+		padding: 35px 0 35px
+	.cycle-slideshow
+		margin: 0
+		min-height: 85px
+	.cycle__top
+		padding-right: 100px
 @media only screen and (max-width: 900px)
 	.out
 		.header .l-container
