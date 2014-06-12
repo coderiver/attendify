@@ -68,15 +68,6 @@
 		.header-nav, .user-auth, .logo
 			vertical-align: top
 			display: inline-block
-		.log-in
-			padding: 0 30px 
-			height: 36px
-			font-size: 14px
-			font-weight: 300 
-			vertical-align: middle
-			+border-radius(18px)
-			border: 2px solid #557db3
-			background: none
 		.header__title
 			margin: 45px 0 15px
 			font-size: 52px
@@ -88,11 +79,6 @@
 		.header__title, .header__text
 			text-align: center
 			
-//out_white
-.out_white
-	background: #FAFCFC 
-//.user-auth		
-.user-auth
 	.log-in
 		padding: 0 30px 
 		height: 36px
@@ -102,6 +88,18 @@
 		+border-radius(18px)
 		border: 2px solid #557db3
 		background: none
+
+//.user-auth		
+// .user-auth
+// 	.log-in
+// 		padding: 0 30px 
+// 		height: 36px
+// 		font-size: 14px
+// 		font-weight: 300 
+// 		vertical-align: middle
+// 		+border-radius(18px)
+// 		border: 2px solid #557db3
+// 		background: none
 
 //.btn
 .btn
@@ -333,6 +331,8 @@
 		font-size: 42px
 		text-align: center
 		font-family: Omnes, Arial,sans-serif  
+	.cycle__title_mod
+		padding: 35px 0
 	.cycle__title2
 		color: #FFF 
 		font-size: 22px
@@ -420,6 +420,16 @@
 		+border-radius(8px)
 		&.btn_green
 			background: #8fb323
+	.cycle__ico
+		display: inline-block
+		+s(foot-soc-img)
+	&.cycle_bg
+		padding-bottom: 0 !important
+		background: #3d454b
+		+background-image(linear-gradient(left,#3d454b 0,#474f59 100%))
+.cycle_social
+	.cycle-slideshow
+		min-height: 85px
 .footer__bott
 	margin-top: 20px
 	.copyright
@@ -428,6 +438,11 @@
 		float: right
 	
 //BEGIN page how-it-works
+
+.out_white, .out_social
+	background: #FAFCFC 
+
+//out_white
 .out_white
 	
 	.header
@@ -469,10 +484,34 @@
 		color: #6C7880
 		font-size: 18px
 		font-weight: 100  
-
+	&.topic_left,
+	&.topic_right
+		margin-top: 70px
+		text-align: left
+		.topic__text
+			color: #36434c
+			font-size: 16px
+	&.topic_left
+		padding-right:  95px
+	&.topic_right
+		padding: 0 0 0 60px
+		.voting__link
+			padding-left: 42px
+			&:before
+				right: auto
+				left: 0
+				+rotate(180)
+		.topic__text
+			padding-right: 40px
 //row		
 .row
 	padding: 60px 0 
+	&.row_border
+		padding: 84px 0
+		border-top: 1px solid #edf1f5
+		.tab__link
+			padding: 0 10px
+			text-align: center
 
 .network_white
 	text-align: center
@@ -519,6 +558,38 @@
 		position: absolute
 		top: 64px
 		right: -43px
+.tab-cont__block
+	position: absolute
+	top: 170px
+	left: -240px
+	width: 200px
+	color: #6c7880
+	text-align: left
+.tab-cont__line
+	position: absolute
+	right: -153px
+	top: 10px
+	width: 142px
+	height: 1px
+	background: #45a3e6
+	&:before
+		position: absolute
+		content: ''
+		top: -2.5px
+		right: -7px
+		height: 5px
+		width: 5px
+		background: #45a3e6
+		+border-radius(50%)
+	&:after
+		position: absolute
+		content: ''
+		top: -4.5px
+		left: -11px
+		width: 9px
+		height: 9px
+		border: 2px solid #45a3e6
+		+border-radius(50%)
 .tab__wrap
 	overflow: hidden 
 	+border-radius(8px 8px 0 0)
@@ -569,6 +640,7 @@
 		&.is-active
 			.tab__link
 				color: #45a3e6
+				font-weight: 300
 				background: none
 			.tab__link_1
 				span
@@ -578,6 +650,18 @@
 				span
 					&:before
 						+s(tab-pic7)
+			.tab__link_9
+				span
+					&:before
+						+s(tab-pic12)
+			.tab__link_12
+				span
+					&:before
+						+s(people-pic)
+			.tab__link_14
+				span
+					&:before
+						+s(tab-pic15)
 			&:before
 				content: none
 		.tab__link
@@ -626,6 +710,44 @@
 				span
 					&:before
 						+s(tab-pic11)
+			&.tab__link_9
+				span
+					&:before
+						margin-top: -10px
+			&.tab__link_10
+				span
+					&:before
+						margin-top: -13px
+						+s(tab-pic13)
+			&.tab__link_11
+				span
+					&:before
+						margin-top: -13px
+						+s(tab-pic14)
+			&.tab__link_12
+				span
+					&:before
+						margin-top: -13px
+						
+			&.tab__link_13
+				span
+					&:before
+						margin-top: -13px
+						+s(quick-polls-pic)
+			&.tab__link_14
+				span
+					&:before
+						margin-top: -13px
+			&.tab__link_15
+				span
+					&:before
+						margin-top: -13px
+						+s(tab-pic16)
+			&.tab__link_16
+				span
+					&:before
+						margin-top: -13px
+						+s(tab-pic17)
 
 .tab_2
 	height: 380px
@@ -655,38 +777,8 @@
 		border: 2px solid rgba(#144466, 0.1)
 		background: #fff
 		+border-radius(50%)
-	.tab-cont__block
-		position: absolute
-		top: 170px
-		left: -240px
-		width: 200px
-		color: #6c7880
-		text-align: left
-	.tab-cont__line
-		position: absolute
-		right: -153px
-		top: 10px
-		width: 142px
-		height: 1px
-		background: #45a3e6
-		&:before
-			position: absolute
-			content: ''
-			top: -2.5px
-			right: -7px
-			height: 5px
-			width: 5px
-			background: #45a3e6
-			+border-radius(50%)
-		&:after
-			position: absolute
-			content: ''
-			top: -4.5px
-			left: -11px
-			width: 9px
-			height: 9px
-			border: 2px solid #45a3e6
-			+border-radius(50%)
+// .tab_2-w
+// 	width: 100%
 .tab_3
 	margin-bottom: 40px
 	.tab__wrap
@@ -701,6 +793,29 @@
 		width: 100%
 	.tab__link
 		text-align: left
+.tab_3-w
+	width: 100%
+	height: auto
+	min-height: 418px
+	.tab-cont
+		float: right
+		padding-left: 50px
+		width: 76%
+		text-align: left
+	.tab-cont__img
+		position: relative
+		margin-top: 40px
+		display: inline-block
+	.tab-cont__block
+		top: 80px
+		left: 440px
+		right: auto
+	.tab-cont__line
+		left: -172px
+		+rotate(180)
+	.tab-cont__block_2
+		top: 230px
+
 
 //day
 .day
@@ -793,18 +908,230 @@
 		margin-bottom: 60px
 
 
-//page social-app
+//BEGIN page social-app
 .out_social
 	.header
 		.l-container
 			background: url('../img/iphone-soc-pic.png') no-repeat 50% 120%, url('../img/left_part_bg.png') no-repeat 0 90%, url('../img/right_part_bg.png') no-repeat 100% 90%
 	.cycle
 		padding: 35px 0 35px
-	.cycle-slideshow
-		margin: 0
-		min-height: 85px
+	.topic__title_mod
+		margin-top: 0
 	.cycle__top
 		padding-right: 100px
+	.cycle-slideshow
+		margin: 0
+	#get-started
+		.__title
+			font-size: 42px
+			margin-bottom: 12px
+		.topic__text
+			color: #fff
+			font-weight: 100
+
+.message
+	position: relative
+	margin-top: 60px
+	.slider
+	.slider__item
+		height: 100%
+		width: 100%
+		color: #36434c
+		font-size: 14px
+	.slider__nav
+		position: absolute
+		bottom: -42px
+		left: 0
+		z-index: 200
+		width: 42px
+		height: 42px
+		+border-radius(50%)
+		border: 2px solid #cad9e6
+		cursor: pointer
+		display: inline-block
+		+transition(0.2s)
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			margin: -3.5px 0 0 -7px
+			+s(slid-pic)
+		&:hover
+			background: #45a3e6
+			border: 2px solid #45a3e6
+			&:before
+				+si(slid-pic-hov)
+		&:active
+			top: auto
+	.slider__nav_prev
+		&:hover
+			&:before
+				+rotate(180)
+	.slider__nav_next
+		left: 58px
+		&:before
+			+rotate(180)
+		&:hover
+			&:before
+				+rotate(0)
+	.message__title
+		position: relative
+		margin-bottom: 16px
+		padding: 0 0 0 40px
+		font-size: 22px
+		color: #45a3e6
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 0
+			margin-top: -12px
+			+s(mess-pic)
+
+//row_red
+.row_red
+	background: #e7957d
+	+background-image(linear-gradient(left, #e7957d 0%, #efad81 100%))
+	.cycle__nav_prev2
+		left: 0
+		+s(arrow-pref2)
+	.cycle__nav_next2
+		right: 0
+		+s(arrow-next2)
+	.log-in
+		margin-left: 20px
+		padding: 0 15px 0 12px
+		color: #fff
+		font-size: 12px
+		border-color: #efb599
+	.cycle
+		padding: 60px 0 50px
+	.cycle__img
+		width: 274px
+	.cycle__row
+		margin-top: 4px
+	.cycle__col
+		width: 17%
+		font-size: 14px
+		font-weight: 100
+		color: #fff
+		display: inline-block
+	.cycle__index
+		font-size: 28px
+	.__title
+		font: 34px omnes
+		margin-bottom: 40px
+		text-align: center
+		color: #fff
+		font-size: 36px
+		font-weight: 100
+
+//soc
+.soc
+	position: relative
+	margin: 70px 0 50px
+	padding-top: 24px
+	font-size: 0
+	+clr
+	.soc__block
+		position: relative
+		width: 25%
+		display: inline-block
+		+clr
+	.soc__item
+		position: relative
+		width: 70px
+		height: 70px
+		+border-radius(50%)
+		display: inline-block
+		z-index: 2
+		+transition(0.2s)
+		+box
+		&.soc__item_in,
+		&.soc__item_f
+			float: left
+			margin-left: 20px
+		&.soc__item_tw,
+		&.soc__item_g
+			float: right
+			margin-right: 20px
+		&.soc__item_in
+			background: #0977b5
+			&:hover
+				+box-shadow(0 0 5px #0977b5)
+		&.soc__item_f
+			background: #3b5998
+			&:hover
+				+box-shadow(0 0 5px #3b5998)
+		&.soc__item_tw
+			background: #00aced
+			&:hover
+				+box-shadow(0 0 5px #00aced)
+		&.soc__item_g
+			background: #cc3732
+			&:hover
+				+box-shadow(0 0 5px #cc3732)
+	.soc__icon
+		position: absolute
+		top: 50%
+		left: 50%
+		&.soc__icon_in
+			margin: -12.5px 0 0 -12.5px 
+			+s(soc-in)
+		&.soc__icon_f
+			margin: -16px 0 0 -9.5px
+			+s(soc-f)
+		&.soc__icon_tw
+			margin: -13px 0 0 -16.5px
+			+s(soc-tw)
+		&.soc__icon_g
+			margin: -15px 0 0 -15px
+			+s(soc-g)
+	.soc__shadow
+		position: absolute
+		top: 50%
+		margin-top: -30px
+		z-index: 0
+		&.soc__shadow_in
+			left: 55px
+			+s(bef-in)
+		&.soc__shadow_f
+			left: 55px
+			+s(bef-fb)
+		&.soc__shadow_tw
+			right: 55px
+			+s(bef-twitter)
+		&.soc__shadow_g
+			right: 55px
+			+s(bef-g)
+	.soc__phone
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -36px 
+
+//voting
+.voting
+	margin-top: 45px
+	width: 390px
+	border-top: 1px solid #ebeff2
+	.voting__link
+		position: relative
+		padding: 16px 45px 0 0
+		color: #adbfcc
+		line-height: 1
+		font-size: 14px
+		display: inline-block
+		&:hover
+			text-decoration: underline
+		&:before
+			position: absolute
+			content: ''
+			top: 16px
+			right: 0
+			+s(voting-link-pic)
+
 @media only screen and (max-width: 900px)
 	.out
 		.header .l-container
